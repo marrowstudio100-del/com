@@ -1749,6 +1749,11 @@
         "Estimated budget: " + data.get("budget") + "\n\n" +
         "Project details:\n" + data.get("details")
       );
+       if (STUDIO_EMAIL === "marrowstudio.100@gmail.com") {
+        alert("Before publishing, open index.html and replace hello@yourdomain.com with your real inquiry email address.");
+        return;
+      }
+
   
       window.location.href = "mailto:" + STUDIO_EMAIL + "?subject=" + subject + "&body=" + body;
     });
